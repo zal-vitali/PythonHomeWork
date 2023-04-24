@@ -14,5 +14,6 @@ def multiplierList(number,multipier):
             multipier.append(str(i))
             return multiplierList(number//i, multipier)
 
-multiplierList(60,multipier)
-print(multipier)
+number = 7777777
+multiplierList(number,multipier)
+print(f"{number} -> {multipier}")

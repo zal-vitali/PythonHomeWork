@@ -30,11 +30,12 @@ def dialogue():
         initialiseBot()
         flag = True
         while flag:
-            if input().lower() == 'пока':
+            message = input().lower()
+            if message == 'пока':
                 print('Пока!')
                 flag = False  
             else:
-                message = input().lower()
+                #message = input().lower()
                 if message in dictionnary:
                     print(dictionnary[message]) 
                 else:
