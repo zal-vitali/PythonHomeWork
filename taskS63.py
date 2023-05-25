@@ -3,12 +3,16 @@
 
 import math
 
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
 def decimals():
 
     for i in range(1,11):
         for j in range(i,12):
-            #if j % i != 0:
-            if math.gcd(j, i) == 1 and i != 1:
+            if math.gcd(j, i) == 1 and i/j != 1:
                 print(f'{i}/{j}')
 
 decimals()
